@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './assets/styles/App.scss';
+import '../assets/styles/App.scss';
 
-function App() {
+function Home() {
   return (
     <div
       className='App'
@@ -59,7 +59,8 @@ function App() {
               <div className='home-explanation-paragraph'>
                 My <a href='https://school.logicmag.io/'>logic school</a> peers
                 have done great work on raising awareness and practicing
-                activism for wider populations: check out their work <a>here</a>
+                activism for wider populations: check out their work{' '}
+                <a href='https://school.logicmag.io/'>here</a>
               </div>
             </div>
           </div>
@@ -69,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
