@@ -1,0 +1,16 @@
+$peach: #dbb0a0;
+$piglet: #e0c2c0;
+$dawn: #eab586;
+$burnt-sienna: #b2481b;
+$plum: #57394a;
+
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: $burnt-sienna;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 8px 0;
+  }
+}

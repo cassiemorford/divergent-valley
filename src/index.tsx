@@ -14,6 +14,15 @@ import * as serviceWorker from './serviceWorker';
 import './assets/styles/fonts.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+// import your icons
+import { faComments } from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  faComments // more icons go here
+);
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

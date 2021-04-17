@@ -4,15 +4,14 @@ $dawn: #eab586;
 $burnt-sienna: #b2481b;
 $plum: #57394a;
 
-.App {
-  font-family: 'Josefin Sans', 'Helvetica';
-  a {
-    text-decoration: none;
-    color: $burnt-sienna;
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
+.simple-page {
+  width: 100vw;
+  height: 100vh;
+  background: $piglet;
+  padding: 20px;
+
+  h1 {
+    margin-bottom: 20px;
   }
 }
 

@@ -3,10 +3,7 @@ import '../assets/styles/App.scss';
 
 function Research() {
   return (
-    <div
-      className='App'
-      style={{ backgroundImage: `url(${'images/30073091.jpg'})` }}
-    >
+    <div className='research simple-page'>
       <h1>Research</h1>
     </div>
   );

@@ -27,38 +27,31 @@ function Script() {
   };
 
   return (
-    <div
-      className='App'
-      style={{ backgroundImage: `url(${'images/30073091.jpg'})` }}
-    >
-      <div className='script-container'>
-        {sections.map(
-          ({ wrapperClasses, contentClasses, content, type }, idx) => (
-            <div
-              className={`${wrapperClasses} ${completed[idx] ? 'muted' : ''}`}
-            >
-              <div className={contentClasses}>
-                {content}
-                {type !== 'reminder' && (
-                  <button
-                    className='done-button'
-                    onClick={() => toggleCompletedForIndex(idx)}
-                  >
-                    {`${completed[idx] ? 'revisit' : 'done'}`}
-                  </button>
-                )}
-              </div>
+    <div className='script-container'>
+      {sections.map(
+        ({ wrapperClasses, contentClasses, content, type }, idx) => (
+          <div className={`${wrapperClasses} ${completed[idx] ? 'muted' : ''}`}>
+            <div className={contentClasses}>
+              {content}
               {type !== 'reminder' && (
-                <textarea
-                  className='notes'
-                  contentEditable
-                  placeholder='notes'
-                ></textarea>
+                <button
+                  className='done-button'
+                  onClick={() => toggleCompletedForIndex(idx)}
+                >
+                  {`${completed[idx] ? 'revisit' : 'done'}`}
+                </button>
               )}
             </div>
-          )
-        )}
-      </div>
+            {type !== 'reminder' && (
+              <textarea
+                className='notes'
+                contentEditable
+                placeholder='notes'
+              ></textarea>
+            )}
+          </div>
+        )
+      )}
     </div>
   );
 }

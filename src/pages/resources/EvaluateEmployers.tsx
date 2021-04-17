@@ -3,10 +3,7 @@ import '../../assets/styles/App.scss';
 
 function EvaluateEmployers() {
   return (
-    <div
-      className='App'
-      style={{ backgroundImage: `url(${'images/30073091.jpg'})` }}
-    >
+    <div className='evaluate-employers simple-page'>
       <h1>Evaluate Employers</h1>
     </div>
   );
