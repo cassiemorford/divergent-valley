@@ -1,0 +1,95 @@
+$peach: #dbb0a0;
+$piglet: #e0c2c0;
+$dawn: #eab586;
+$burnt-sienna: #b2481b;
+$plum: #57394a;
+
+.App {
+  font-family: 'Josefin Sans', 'Helvetica';
+  a {
+    text-decoration: none;
+    color: $burnt-sienna;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.home-nav {
+  background: rgba($peach, 0.8);
+  padding: 10px 0;
+  font-size: 1.4em;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      list-style-type: none;
+      margin: 0 14px;
+    }
+  }
+}
+
+.home-body {
+  background-color: rgba($burnt-sienna, 0.9);
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    70% 88%,
+    75% 5%,
+    90% 41%,
+    90% 88%,
+    70% 88%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
+
+  .home-body-mask {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($piglet, 0.5);
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      92% 25%,
+      66% 15%,
+      92% 5%,
+      91% 25%,
+      0 100%,
+      100% 100%,
+      100% 0%
+    );
+  }
+
+  .home-content {
+    width: 60%;
+    height: 100vh;
+    border-right: 4px solid $peach;
+    background-color: rgba($peach, 0.2);
+    display: flex;
+    flex-direction: column;
+
+    .home-title {
+      color: $plum;
+      padding: 40px 0 40px 20px;
+      h1 {
+        font-size: 72px;
+      }
+    }
+
+    .home-explanation {
+      background-color: rgba($peach, 0.3);
+      color: $plum;
+      margin: 20px;
+
+      .home-explanation-paragraph {
+        font-size: 1.4em;
+        width: 80%;
+        margin: 24px auto;
+      }
+    }
+  }
+}
