@@ -27,11 +27,14 @@ function EvaluateEmployersForm({ company }: EvaluateEmployerFormProps) {
         <>
           <div className='review-section-header'>
             <h2>Submit your Ratings</h2>
-            <input
-              type='text'
-              value={username}
-              onChange={ev => setUsername(ev.target.value)}
-            />
+            <span>
+              <span>randomized test username:</span>
+              <input
+                type='text'
+                value={username}
+                onChange={ev => setUsername(ev.target.value)}
+              />
+            </span>
             <button
               className='review-collapse-button'
               onClick={() => setCollapsed(true)}
