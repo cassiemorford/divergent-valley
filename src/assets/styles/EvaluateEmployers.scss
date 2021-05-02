@@ -1,0 +1,75 @@
+$peach: #dbb0a0;
+$piglet: #e0c2c0;
+$dawn: #eab586;
+$burnt-sienna: #b2481b;
+$plum: #57394a;
+
+.evaluate-employers-header {
+  select {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 4px 2px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+
+    optgroup {
+      font-size: 16px;
+    }
+  }
+}
+
+.company-icon {
+  margin-right: 10px;
+  color: $burnt-sienna;
+  svg.svg-inline--fa {
+    width: 1em;
+  }
+}
+
+.evaluate-employers-form {
+  border-top: 2px solid $burnt-sienna;
+  border-bottom: 2px solid $burnt-sienna;
+  background: rgba($burnt-sienna, 0.1);
+  padding: 12px;
+  .category-title {
+    font-weight: bold;
+    border-bottom: 1px solid $burnt-sienna;
+    text-transform: uppercase;
+  }
+}
+
+.evaluate-employers-review {
+  display: flex;
+}
+
+.evaluate-employers-review-header {
+  padding: 20px 0;
+}
+
+.review-section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employer-rater {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  .category-explanation {
+    text-align: left;
+    max-width: calc(100% - 200px);
+  }
+
+  .stars {
+    color: $plum;
+    margin-right: 20px;
+    width: 130px;
+    &.unscored {
+      opacity: 0.3;
+    }
+  }
+  margin: 20px 0;
+}

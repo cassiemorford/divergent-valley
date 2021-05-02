@@ -14,8 +14,8 @@ function Scripts() {
         Scripts
       </h1>
       <VerticalNav>
-        <Link to='/resources/script/negotiation'>New Job Negotiation</Link>
-        <Link to='/resources/script/accommodations'>
+        <Link to='/resources/scripts/negotiation'>New Job Negotiation</Link>
+        <Link to='/resources/scripts/accommodations'>
           Asking for accommodations at work
         </Link>
       </VerticalNav>

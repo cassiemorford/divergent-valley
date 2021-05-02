@@ -13,15 +13,19 @@ import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import './assets/styles/fonts.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 // import your icons
-import { faComments } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBriefcase,
+  faComments,
+  faStar,
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(
-  faComments // more icons go here
-);
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+
+library.add(faComments, faBriefcase, faStar, fab, far);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -39,6 +43,12 @@ ReactDOM.render(
           </Route>
           <Route path='/resources/scripts' exact>
             <Scripts />
+          </Route>
+          <Route path='/resources/script' exact>
+            <Scripts />
+          </Route>
+          <Route path='/resources/scripts/:scenario'>
+            <Script />
           </Route>
           <Route path='/resources/script/:scenario'>
             <Script />
