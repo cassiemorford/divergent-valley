@@ -8,7 +8,9 @@ interface EvaluateEmployerFormProps {
 }
 
 function EvaluateEmployersForm({ company }: EvaluateEmployerFormProps) {
-  const [username, setUsername] = useState('cass');
+  const [username, setUsername] = useState(
+    `test-user-${Math.floor(Math.random() * 100)}`
+  );
   const [collapsed, setCollapsed] = useState(false);
 
   return (
